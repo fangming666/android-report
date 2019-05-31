@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="username">UserName</string>
+    <string name="switchcompat">SwitchCompat</string>
+    <string name="show_snackbar">Show SnackBar</string>
+    <string name="ydb">园丁邦</string>
+    <string name="我的孩子">我的孩子</string>
+    <string name="家庭成员">家庭成员</string>
+    <string name="历史订单">历史订单</string>
+    <string name="使用指南">使用指南</string>
+    <string name="意见反馈">意见反馈</string>
+    <string name="我的考试">我的考试</string>
+    <string name="学习助手">学习助手</string>
+    <string name="个人中心">个人中心</string>
+    <string name="todo">TODO</string>
+    <string name="将知识简单化">将知识简单化，提升孩子学习力。</string>
+    <string name="等待审核">等待审核</string>
+</resources>

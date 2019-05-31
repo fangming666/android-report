@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fbfbfb"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_83"
+        android:background="@drawable/tool_active"
+        android:paddingEnd="@dimen/dp_15"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingStart="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_18">
+
+        <ImageView
+            android:id="@+id/toolShopImg"
+            android:layout_width="@dimen/dp_46"
+            android:layout_height="@dimen/dp_46"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/dp_13"
+            android:src="@mipmap/tool_shop"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/toolShopImg"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_6"
+                android:autoLink="all"
+                android:color="@color/base_text_color"
+                android:focusable="true"
+                android:text="园丁邦商城"
+                android:textSize="@dimen/dp_16"
+                tools:ignore="SpUsage"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:color="#9B9B9B"
+                android:text="将知识简单化，提升孩子学习力。"
+                android:textSize="@dimen/dp_13"
+                tools:ignore="SpUsage"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic__right_row"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E5E5E5"/>
+
+</LinearLayout>

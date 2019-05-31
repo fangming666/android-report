@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/baseBg"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingTop="5dp"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/childInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/accountNumberInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/role_background_color"
+        android:orientation="vertical"
+        android:paddingLeft="23dp"
+        android:paddingTop="18dp"
+        android:paddingRight="9dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="学生账号请在电脑端登陆"
+            android:textColor="#927542"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="电脑打开www.yuandingbang.cn。"
+            android:textColor="#8c6f39"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="1.首次登陆学生账号，使用临时账号和密码。临时账号在本页面即可查看，临时密码请询问孩子家庭管理员。"
+            android:textColor="#8c6f39"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="2.创建固定账号和密码后，可以在本页面修改学生账号的密码"
+            android:textColor="#8c6f39"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

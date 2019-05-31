@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="tab_checked">#50B0F1</color>
+    <color name="tab_unchecked">#757575</color>
+    <color name="base_text_color">#3a3a3a</color>
+    <color name="colorWhite">#fff</color>
+    <color name="baseBg">#eef2f4</color>
+    <color name="tool_shop_active_color">#FBFBF2</color>
+    <color name="user_name_color">#222</color>
+    <color name="phone_color">#999</color>
+    <color name="role_background_color">#FFFDEF</color>
+    <color name="role_text_color">#927542</color>
+    <color name="account_line">#e5e5e5</color>
+    <color name="color_danger">#F13939</color>
+</resources>

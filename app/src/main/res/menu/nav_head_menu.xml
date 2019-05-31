@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/myChild"
+            android:icon="@drawable/ic_my_child"
+            android:title="@string/我的孩子">
+        </item>
+        <item
+            android:id="@+id/myFamily"
+            android:title="@string/家庭成员"
+            android:icon="@drawable/ic_my_family">
+        </item>
+        <item
+            android:id="@+id/myOrder"
+            android:title="@string/历史订单"
+            android:icon="@drawable/ic_my_order"
+            >
+        </item>
+        <item
+            android:id="@+id/myDirectory"
+            android:title="@string/使用指南"
+            android:icon="@drawable/ic_my_directory"
+            >
+        </item>
+        <item
+            android:id="@+id/mySuggestion"
+            android:title="@string/意见反馈"
+            android:icon="@drawable/ic_my_suggestion"
+            >
+        </item>
+    </group>
+</menu>

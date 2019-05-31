@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/tab_checked</item>
+        <!--标题栏颜色-->
+        <item name="colorPrimary">@color/tab_checked</item>
+        <!-- EditText line -->
+        <item name="colorAccent">@color/tab_checked</item>
+        <!--设置title颜色 -->
+        <item name="titleTextColor">@android:color/white</item>
+    </style>
+    <style name="HintAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8bc34a</item>
+    </style>
+    <style name="CounterAppearance" parent="TextAppearance.AppCompat" >
+        <item name="android:textColor">#8bc34a</item>
+    </style>
+
+    <style name="CounterOverflowAppearance" parent="TextAppearance.AppCompat" >
+        <item name="android:textColor">#faf</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+</resources>

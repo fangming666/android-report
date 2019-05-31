@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseBg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/loadingWarp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/loading_anim" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/roleWarp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@color/colorWhite"
+        android:paddingLeft="@dimen/dp_17"
+        android:paddingTop="@dimen/dp_15">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/headImg"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_15"
+            android:src="@mipmap/head" />
+
+        <LinearLayout
+            android:id="@+id/userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/headImg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:textColor="@color/user_name_color"
+                android:textSize="@dimen/dp_18" />
+
+            <TextView
+                android:id="@+id/phoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/phone_color"
+                android:textSize="@dimen/dp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/roleInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInfo"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"></LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_active"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/childNav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/tool_active"
+            android:paddingLeft="25dp"
+            android:paddingTop="14dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/myChildIcon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_my_child" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/myChildIcon"
+                android:text="我的孩子"
+                android:textColor="#3a3a3a"
+
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/childNavName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@+id/childNavRow"
+                    android:text=""
+                    android:textColor="#9B9B9B"
+                    android:textSize="17dp" />
+
+                <ImageView
+                    android:id="@+id/childNavRow"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic__right_row" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_active"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/familyNav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/tool_active"
+            android:paddingLeft="25dp"
+            android:paddingTop="14dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/myFamilyIcon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_my_family" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/myFamilyIcon"
+                android:paddingTop="2dp"
+                android:text="我的家庭"
+                android:textColor="#3a3a3a"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic__right_row" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_active"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/orderNav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/tool_active"
+            android:paddingLeft="25dp"
+            android:paddingTop="14dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/myOrderIcon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_my_order" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/myOrderIcon"
+                android:paddingTop="2dp"
+                android:text="历史订单"
+                android:textColor="#3a3a3a"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic__right_row" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_active"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/directoryNav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/tool_active"
+            android:paddingLeft="25dp"
+            android:paddingTop="14dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/myDirectoryIcon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_my_directory" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/myDirectoryIcon"
+                android:paddingTop="2dp"
+                android:text="使用指南"
+                android:textColor="#3a3a3a"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic__right_row" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/suggestionNav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@drawable/tool_active"
+            android:paddingLeft="25dp"
+            android:paddingTop="14dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/mySuggestionIcon"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/ic_my_suggestion" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/mySuggestionIcon"
+                android:paddingTop="2dp"
+                android:text="意见反馈"
+                android:textColor="#3a3a3a"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic__right_row" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E5E5E5" />
+    </LinearLayout>
+</LinearLayout>
